@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Georgia, "Times New Roman", serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page {
+    width: 94%;
+    max-width: 1000px;
+    min-height: 320px;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 42px 15px 22px;
+}
+
+h1,
+h2 {
+    color: #39977d;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+h1 {
+    margin-bottom: 14px;
+}
+
+h2 {
+    margin-bottom: 24px;
+}
+
+.login-card {
+    width: 185px;
+    min-height: 190px;
+    margin: 0 auto;
+    padding: 10px 12px;
+    background-color: #ffffff;
+    border: 1px solid #f0f0f0;
+    border-radius: 17px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    height: 24px;
+    margin-bottom: 5px;
+    padding: 0 6px;
+    background-color: #dedede;
+    border-radius: 8px;
+}
+
+.icon {
+    font-size: 12px;
+    color: #333333;
+}
+
+.input-box input {
+    width: 100%;
+    min-width: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: inherit;
+    font-size: 6px;
+}
+
+.input-box input::placeholder {
+    color: #888888;
+}
+
+#togglePassword {
+    border: none;
+    background: transparent;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 7px 0 15px;
+    font-size: 5.5px;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.options input {
+    width: 7px;
+    height: 7px;
+}
+
+.options a {
+    color: #222222;
+    text-decoration: none;
+}
+
+.login-btn {
+    display: block;
+    width: 100%;
+    height: 16px;
+    border: none;
+    border-radius: 20px;
+    background-color: #31a57f;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 8px;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #278767;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    margin: 5px 0;
+    color: #888888;
+    font-size: 5px;
+}
+
+.separator::before,
+.separator::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #eeeeee;
+}
+
+.google-btn {
+    width: 100%;
+    height: 19px;
+
+    border: 1px solid #eeeeee;
+    border-radius: 15px;
+    background-color: #ffffff;
+
+    font-family: inherit;
+    font-size: 6px;
+    cursor: pointer;
+}
+
+.google-icon {
+    color: #4285f4;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin-right: 3px;
+}
+
+.signup-text {
+    margin-top: 7px;
+    color: #999999;
+    font-size: 5.5px;
+}
+
+.signup-text a {
+    margin-left: 7px;
+    color: #39977d;
+    text-decoration: none;
+}
+
+.options a:hover,
+.signup-text a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .page {
+        width: 94%;
+        min-height: 320px;
+        padding-top: 42px;
+    }
+
+    .login-card {
+        width: 185px;
+    }
+}
